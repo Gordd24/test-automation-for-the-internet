@@ -1,0 +1,19 @@
+{
+  "name": "testing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test:e2e": "npx playwright test tests/",
+    "test:e2e:all": "npx playwright test tests --project=all-browsers",
+    "test:e2e:smoke": "npx playwright test tests-examples/ --grep @smoke --project=chromium",
+    "test:ab": "npx playwright test tests/basicauth.spec.ts --project=chromium"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.37.1",
+    "typescript": "^5.1.6"
+  }
+}
